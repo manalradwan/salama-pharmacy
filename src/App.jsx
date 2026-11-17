@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-<BrowserRouter basename="/salama-pharmacy"></BrowserRouter>
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Context Providers
 import { ToastProvider } from './context/ToastContext';
 import { AuthProvider } from './context/AuthContext';
