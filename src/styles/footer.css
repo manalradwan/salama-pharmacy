@@ -1,0 +1,139 @@
+/* ==========================================================================
+   Footer Styles
+   ========================================================================== */
+
+.site-footer {
+  background-color: #1A1A1A;
+  color: #999999;
+  padding-top: 4.5rem;
+  font-size: 0.92rem;
+  border-top: 1px solid #292929;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.3fr;
+  gap: 3rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid #2B2B2B;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.footer-logo-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.footer-logo-title span {
+  color: var(--primary-green);
+}
+
+.footer-desc {
+  line-height: 1.7;
+  color: #A0A0A0;
+  max-width: 360px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #CCCCCC;
+}
+
+.footer-contact-item .icon {
+  color: var(--primary-green);
+  font-size: 1.1rem;
+}
+
+.footer-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.footer-link {
+  color: #999999;
+  transition: var(--transition-fast);
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: var(--primary-green);
+  transform: translateX(4px);
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  padding: 1.75rem 0;
+}
+
+.footer-bottom .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.copyright-text {
+  color: #888888;
+  font-size: 0.88rem;
+}
+
+.payment-methods {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.payment-badge {
+  background: #2B2B2B;
+  color: var(--white);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: 1px solid #383838;
+}
+
+@media (max-width: 1024px) {
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
